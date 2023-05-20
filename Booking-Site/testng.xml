@@ -1,0 +1,12 @@
+<suite name="testng-suite">
+	<parameter name="browser" value="firefox" />
+	<test name="test-booking-site">
+		<classes>
+			<class name="booking.BookingTest" />
+			<methods>
+				<include name="testSearch" />
+				<include name="writeResultsToCsv" />
+			</methods>
+		</classes>
+	</test>
+</suite>
